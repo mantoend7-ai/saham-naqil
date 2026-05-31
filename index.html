@@ -9,6 +9,11 @@
 </head>
 <body>
 
+    <!-- SPLASH SCREEN -->
+    <div id="splash">
+        <img src="logo.png" alt="سهم ناقل" id="splash-logo">
+    </div>
+
     <!-- HEADER -->
     <header>
         <div class="header-inner">
@@ -201,6 +206,14 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const splash = document.getElementById('splash');
+        setTimeout(() => {
+            splash.classList.add('splash-hide');
+            setTimeout(() => splash.remove(), 700);
+        }, 1400);
+    </script>
 
 </body>
 </html>
