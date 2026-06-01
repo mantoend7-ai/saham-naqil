@@ -1,0 +1,252 @@
+/* ===== RENTAL PAGE ===== */
+
+.rental-hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, #1a4060 100%);
+    padding: 60px 24px 70px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.rental-hero::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(41,171,226,0.1) 0%, transparent 70%);
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.rental-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    transition: color 0.2s;
+}
+
+.back-link svg { width: 18px; height: 18px; }
+.back-link:hover { color: var(--blue); }
+
+.rental-hero h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 900;
+    color: var(--white);
+    margin: 12px 0 16px;
+}
+
+/* ===== ABOUT ===== */
+.rental-about {
+    padding: 60px 24px;
+    background: var(--bg);
+}
+
+.rental-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 48px;
+    box-shadow: var(--shadow);
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.about-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(41,171,226,0.1);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.about-icon svg {
+    width: 42px;
+    height: 42px;
+    color: var(--blue);
+}
+
+.about-text h2 {
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: var(--navy);
+    margin-bottom: 14px;
+}
+
+.about-text p {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.85;
+    margin-bottom: 24px;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.feature-item svg {
+    width: 18px;
+    height: 18px;
+    color: var(--blue);
+    flex-shrink: 0;
+}
+
+/* ===== BRANCHES ===== */
+.rental-branches {
+    padding: 60px 24px 80px;
+    background: var(--bg);
+}
+
+.branches-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.branch-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 32px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.branch-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--blue), var(--blue-dark));
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.branch-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(41,171,226,0.15);
+}
+
+.branch-num {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--blue);
+    opacity: 0.12;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.branch-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 18px;
+}
+
+.branch-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.branch-detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.branch-detail svg {
+    width: 17px;
+    height: 17px;
+    color: var(--blue);
+    flex-shrink: 0;
+}
+
+.branch-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.branch-map-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 14px rgba(41,171,226,0.35);
+}
+
+.branch-map-btn svg { width: 15px; height: 15px; }
+.branch-map-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(41,171,226,0.45); }
+
+.branch-wa-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #25D366;
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 14px rgba(37,211,102,0.35);
+}
+
+.branch-wa-btn svg { width: 15px; height: 15px; }
+.branch-wa-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(37,211,102,0.45); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .about-card { flex-direction: column; padding: 28px; gap: 24px; }
+    .about-features { grid-template-columns: 1fr; }
+    .branches-grid { grid-template-columns: 1fr; }
+}

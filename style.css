@@ -79,6 +79,16 @@ header {
     gap: 24px;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+html[lang="ar"] .header-right {
+    flex-direction: row-reverse;
+}
+
 .logo {
     width: 46px;
     height: 46px;
@@ -356,6 +366,7 @@ nav a:hover { color: var(--blue); }
 
 .card:hover .card-overlay { opacity: 1; }
 .card:hover .card-content { opacity: 0; transform: scale(0.95); }
+.card.card-no-overlay:hover .card-content { opacity: 1; transform: scale(1); }
 
 .overlay-title {
     color: rgba(255,255,255,0.9);
