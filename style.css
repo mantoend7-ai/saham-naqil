@@ -34,10 +34,10 @@
 }
 
 @keyframes splashPulse {
-    0%   { opacity: 0; transform: scale(0.7); }
-    40%  { opacity: 1; transform: scale(1.05); }
-    70%  { transform: scale(1); }
-    100% { opacity: 1; transform: scale(1); }
+    0%   { opacity: 0; transform: scale(0.5) rotate(-180deg); }
+    55%  { opacity: 1; transform: scale(1.08) rotate(8deg); }
+    75%  { transform: scale(0.97) rotate(-3deg); }
+    100% { opacity: 1; transform: scale(1) rotate(0deg); }
 }
 
 #splash.splash-hide {
@@ -71,7 +71,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    direction: ltr;
 }
 
 .header-left {
@@ -162,6 +161,18 @@ nav a:hover { color: var(--blue); }
     position: relative;
     z-index: 2;
     max-width: 700px;
+}
+
+/* ===== HERO ROTATING TEXT ===== */
+#hero-rotating {
+    display: inline-block;
+    color: var(--blue);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#hero-rotating.hero-fade-out {
+    opacity: 0;
+    transform: translateY(12px);
 }
 
 .hero-tag {
