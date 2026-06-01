@@ -85,8 +85,14 @@ header {
     gap: 12px;
 }
 
-html[lang="ar"] .header-right {
-    flex-direction: row-reverse;
+.logo-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.company-link {
+    text-decoration: none;
 }
 
 .logo {

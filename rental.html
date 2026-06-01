@@ -14,15 +14,20 @@
     <!-- HEADER -->
     <header>
         <div class="header-inner">
-            <div class="header-left">
-                <img src="logo.png" alt="سهم ناقل" class="logo">
-                <nav>
-                    <a href="index.html">الرئيسية</a>
-                    <a href="index.html#contact">تواصل معنا</a>
-                </nav>
-            </div>
             <div class="header-right">
-                <span class="company-name">سهم ناقل</span>
+                <a href="index.html" class="company-link">
+                    <span class="company-name" data-i18n="company_name">سهم ناقل</span>
+                </a>
+            </div>
+            <div class="header-left">
+                <a href="index.html" class="logo-link">
+                    <img src="logo.png" alt="سهم ناقل" class="logo">
+                </a>
+                <nav>
+                    <a href="index.html" data-i18n="nav_home">الرئيسية</a>
+                    <a href="index.html#contact" data-i18n="nav_contact">تواصل معنا</a>
+                </nav>
+                <button id="lang-toggle" class="lang-btn">EN</button>
             </div>
         </div>
     </header>
@@ -30,13 +35,13 @@
     <!-- HERO -->
     <section class="rental-hero">
         <div class="rental-hero-content">
-            <a href="index.html" class="back-link">
+            <a href="index.html" class="back-link" id="back-link">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
-                العودة للرئيسية
+                <span data-i18n="back_link">العودة للرئيسية</span>
             </a>
-            <p class="hero-tag">خدماتنا</p>
-            <h1>خدمات التأجير</h1>
-            <p class="hero-sub">نقدم أفضل خدمات تأجير السيارات بأسطول متنوع وأسعار تنافسية</p>
+            <p class="hero-tag" data-i18n="hero_tag">خدماتنا</p>
+            <h1 data-i18n="hero_title">خدمات التأجير</h1>
+            <p class="hero-sub" data-i18n="hero_sub">نقدم أفضل خدمات تأجير السيارات بأسطول متنوع وأسعار تنافسية</p>
         </div>
     </section>
 
@@ -48,24 +53,24 @@
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 01-2-2v-4l2-4h14l2 4v4a2 2 0 01-2 2h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M9 17h6"/><path d="M3 11h18"/></svg>
                 </div>
                 <div class="about-text">
-                    <h2>نبذة عن خدمة التأجير</h2>
-                    <p>نحن رواد في مجال تأجير السيارات بخبرة تمتد لسنوات، نقدم أسطولاً متنوعاً من السيارات الحديثة المجهزة بأعلى معايير السلامة والجودة. نسعى دائماً لتقديم تجربة تأجير سلسة واحترافية تلبي جميع احتياجاتك.</p>
+                    <h2 data-i18n="about_title">نبذة عن خدمة التأجير</h2>
+                    <p data-i18n="about_text">نحن رواد في مجال تأجير السيارات بخبرة تمتد لسنوات، نقدم أسطولاً متنوعاً من السيارات الحديثة المجهزة بأعلى معايير السلامة والجودة. نسعى دائماً لتقديم تجربة تأجير سلسة واحترافية تلبي جميع احتياجاتك.</p>
                     <div class="about-features">
                         <div class="feature-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            أسطول متنوع من السيارات الحديثة
+                            <span data-i18n="feature1">أسطول متنوع من السيارات الحديثة</span>
                         </div>
                         <div class="feature-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            أسعار تنافسية وشفافة
+                            <span data-i18n="feature2">أسعار تنافسية وشفافة</span>
                         </div>
                         <div class="feature-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            خدمة عملاء على مدار الساعة
+                            <span data-i18n="feature3">خدمة عملاء على مدار الساعة</span>
                         </div>
                         <div class="feature-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                            تأمين شامل على جميع المركبات
+                            <span data-i18n="feature4">تأمين شامل على جميع المركبات</span>
                         </div>
                     </div>
                 </div>
@@ -77,15 +82,15 @@
     <section class="rental-branches">
         <div class="rental-container">
             <div class="section-header">
-                <h2>فروعنا في الخرج</h2>
-                <p>٤ فروع لخدمتك في منطقة الخرج</p>
+                <h2 data-i18n="branches_title">فروعنا في الخرج</h2>
+                <p data-i18n="branches_sub">٤ فروع لخدمتك في منطقة الخرج</p>
             </div>
 
             <div class="branches-grid">
 
                 <div class="branch-card">
                     <div class="branch-num">01</div>
-                    <h3 class="branch-name">حي الخالدية</h3>
+                    <h3 class="branch-name" data-i18n="branch1_name">حي الخالدية</h3>
                     <div class="branch-info">
                         <div class="branch-detail">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
@@ -95,18 +100,18 @@
                     <div class="branch-btns">
                         <a href="https://maps.app.goo.gl/MuCkcdyz6CaAotH26" target="_blank" class="branch-map-btn">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
-                            الخريطة
+                            <span data-i18n="btn_map">الخريطة</span>
                         </a>
                         <a href="https://wa.me/966573830091" target="_blank" class="branch-wa-btn">
                             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.533 5.867L0 24l6.302-1.519A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.846 0-3.574-.493-5.065-1.355L3.5 21.5l.878-3.348A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-                            واتساب
+                            <span data-i18n="btn_whatsapp">واتساب</span>
                         </a>
                     </div>
                 </div>
 
                 <div class="branch-card">
                     <div class="branch-num">02</div>
-                    <h3 class="branch-name">حي الهدا</h3>
+                    <h3 class="branch-name" data-i18n="branch2_name">حي الهدا</h3>
                     <div class="branch-info">
                         <div class="branch-detail">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
@@ -116,18 +121,18 @@
                     <div class="branch-btns">
                         <a href="https://maps.app.goo.gl/yJGDzLQzuZHPY6g26" target="_blank" class="branch-map-btn">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
-                            الخريطة
+                            <span data-i18n="btn_map">الخريطة</span>
                         </a>
                         <a href="https://wa.me/966573842799" target="_blank" class="branch-wa-btn">
                             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.533 5.867L0 24l6.302-1.519A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.846 0-3.574-.493-5.065-1.355L3.5 21.5l.878-3.348A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-                            واتساب
+                            <span data-i18n="btn_whatsapp">واتساب</span>
                         </a>
                     </div>
                 </div>
 
                 <div class="branch-card">
                     <div class="branch-num">03</div>
-                    <h3 class="branch-name">حي طويق</h3>
+                    <h3 class="branch-name" data-i18n="branch3_name">حي طويق</h3>
                     <div class="branch-info">
                         <div class="branch-detail">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
@@ -137,18 +142,18 @@
                     <div class="branch-btns">
                         <a href="https://maps.app.goo.gl/DfvDudQks58L1bej6" target="_blank" class="branch-map-btn">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
-                            الخريطة
+                            <span data-i18n="btn_map">الخريطة</span>
                         </a>
                         <a href="https://wa.me/966559860113" target="_blank" class="branch-wa-btn">
                             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.533 5.867L0 24l6.302-1.519A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.846 0-3.574-.493-5.065-1.355L3.5 21.5l.878-3.348A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-                            واتساب
+                            <span data-i18n="btn_whatsapp">واتساب</span>
                         </a>
                     </div>
                 </div>
 
                 <div class="branch-card">
                     <div class="branch-num">04</div>
-                    <h3 class="branch-name">المجمع</h3>
+                    <h3 class="branch-name" data-i18n="branch4_name">المجمع</h3>
                     <div class="branch-info">
                         <div class="branch-detail">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
@@ -158,11 +163,11 @@
                     <div class="branch-btns">
                         <a href="https://maps.app.goo.gl/ePwXiefKut1Sjyes8" target="_blank" class="branch-map-btn">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
-                            الخريطة
+                            <span data-i18n="btn_map">الخريطة</span>
                         </a>
                         <a href="https://wa.me/966573850319" target="_blank" class="branch-wa-btn">
                             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.533 5.867L0 24l6.302-1.519A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.846 0-3.574-.493-5.065-1.355L3.5 21.5l.878-3.348A9.953 9.953 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-                            واتساب
+                            <span data-i18n="btn_whatsapp">واتساب</span>
                         </a>
                     </div>
                 </div>
@@ -176,9 +181,9 @@
         <div class="footer-inner">
             <div class="footer-brand">
                 <img src="logo.png" alt="سهم ناقل" class="footer-logo">
-                <span>سهم ناقل</span>
+                <span data-i18n="company_name">سهم ناقل</span>
             </div>
-            <p class="footer-copy">جميع الحقوق محفوظة &copy; 2025 سهم ناقل</p>
+            <p class="footer-copy" data-i18n="footer_copy">جميع الحقوق محفوظة &copy; 2025 سهم ناقل</p>
             <div class="social-links">
                 <a href="#" class="social-btn">
                     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -189,6 +194,86 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const i18n = {
+            ar: {
+                company_name:    'سهم ناقل',
+                nav_home:        'الرئيسية',
+                nav_contact:     'تواصل معنا',
+                hero_tag:        'خدماتنا',
+                hero_title:      'خدمات التأجير',
+                hero_sub:        'نقدم أفضل خدمات تأجير السيارات بأسطول متنوع وأسعار تنافسية',
+                back_link:       'العودة للرئيسية',
+                about_title:     'نبذة عن خدمة التأجير',
+                about_text:      'نحن رواد في مجال تأجير السيارات بخبرة تمتد لسنوات، نقدم أسطولاً متنوعاً من السيارات الحديثة المجهزة بأعلى معايير السلامة والجودة. نسعى دائماً لتقديم تجربة تأجير سلسة واحترافية تلبي جميع احتياجاتك.',
+                feature1:        'أسطول متنوع من السيارات الحديثة',
+                feature2:        'أسعار تنافسية وشفافة',
+                feature3:        'خدمة عملاء على مدار الساعة',
+                feature4:        'تأمين شامل على جميع المركبات',
+                branches_title:  'فروعنا في الخرج',
+                branches_sub:    '٤ فروع لخدمتك في منطقة الخرج',
+                branch1_name:    'حي الخالدية',
+                branch2_name:    'حي الهدا',
+                branch3_name:    'حي طويق',
+                branch4_name:    'المجمع',
+                btn_map:         'الخريطة',
+                btn_whatsapp:    'واتساب',
+                footer_copy:     'جميع الحقوق محفوظة © 2025 سهم ناقل',
+            },
+            en: {
+                company_name:    'Sahm Naqil',
+                nav_home:        'Home',
+                nav_contact:     'Contact Us',
+                hero_tag:        'Our Services',
+                hero_title:      'Rental Services',
+                hero_sub:        'We offer the best car rental services with a diverse fleet and competitive prices',
+                back_link:       'Back to Home',
+                about_title:     'About Our Rental Service',
+                about_text:      'We are leaders in car rental with years of experience, offering a diverse fleet of modern vehicles equipped with the highest safety and quality standards. We always strive to provide a smooth and professional rental experience that meets all your needs.',
+                feature1:        'Diverse fleet of modern vehicles',
+                feature2:        'Competitive and transparent pricing',
+                feature3:        '24/7 customer service',
+                feature4:        'Comprehensive insurance on all vehicles',
+                branches_title:  'Our Branches in Al-Kharj',
+                branches_sub:    '4 branches serving you in the Al-Kharj region',
+                branch1_name:    'Al-Khalidiya District',
+                branch2_name:    'Al-Hada District',
+                branch3_name:    'Tuwayq District',
+                branch4_name:    'Al-Majma\'a',
+                btn_map:         'Map',
+                btn_whatsapp:    'WhatsApp',
+                footer_copy:     'All Rights Reserved © 2025 Sahm Naqil',
+            }
+        };
+
+        let currentLang = 'ar';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+            document.documentElement.dir  = lang === 'ar' ? 'rtl' : 'ltr';
+            document.body.style.direction  = lang === 'ar' ? 'rtl' : 'ltr';
+            document.title = lang === 'ar'
+                ? 'خدمات التأجير — سهم ناقل'
+                : 'Rental Services — Sahm Naqil';
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key  = el.getAttribute('data-i18n');
+                const text = i18n[lang][key];
+                if (text !== undefined) el.textContent = text;
+            });
+
+            document.getElementById('lang-toggle').textContent = lang === 'ar' ? 'EN' : 'AR';
+
+            const backLink = document.getElementById('back-link');
+            backLink.style.flexDirection = lang === 'ar' ? '' : 'row-reverse';
+        }
+
+        document.getElementById('lang-toggle').addEventListener('click', () => {
+            setLanguage(currentLang === 'ar' ? 'en' : 'ar');
+        });
+    </script>
 
 </body>
 </html>
