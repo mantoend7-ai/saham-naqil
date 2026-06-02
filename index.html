@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سهم ناقل</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,6 +12,26 @@
     <!-- SPLASH SCREEN -->
     <div id="splash">
         <img src="logo.png" alt="سهم ناقل" id="splash-logo">
+    </div>
+
+    <!-- RENTAL CLICK ANIMATION -->
+    <div id="rental-splash" class="rental-splash hidden">
+        <div class="rental-splash-content">
+            <p class="rental-splash-tag">خدمات التأجير</p>
+            <div class="rental-car-track">
+                <div class="rental-car">
+                    <svg viewBox="0 0 64 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M8 24h48" />
+                        <path d="M16 24c0 2.7-2.2 5-5 5s-5-2.3-5-5 2.2-5 5-5 5 2.3 5 5z" />
+                        <path d="M54 24c0 2.7-2.2 5-5 5s-5-2.3-5-5 2.2-5 5-5 5 2.3 5 5z" />
+                        <path d="M12 24V15c0-2.2 1.8-4 4-4h28c2.2 0 4 1.8 4 4v9" />
+                        <path d="M16 15l4-8h16l4 8" />
+                        <path d="M22 15h10" />
+                        <path d="M4 24h8" />
+                    </svg>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- HEADER -->
@@ -58,11 +77,11 @@
         <div class="cards-grid">
 
             <!-- Card 1: خدمات التأجير -->
-            <div class="card card-no-overlay" onclick="window.location.href='rental.html'" style="cursor:pointer">
+            <div id="rental-card" class="card card-no-overlay" style="cursor:pointer">
                 <div class="card-accent"></div>
                 <div class="card-content">
                     <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 01-2-2v-4l2-4h14l2 4v4a2 2 0 01-2 2h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M9 17h6"/><path d="M3 11h18"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12.5h18l-1.5-5.75a1 1 0 00-.98-.75H6.48a1 1 0 00-.98.75L3 12.5z"/><path d="M3 12.5v4.75a1 1 0 001 1h1a1 1 0 001-1v-1h12v1a1 1 0 001 1h1a1 1 0 001-1V12.5"/><circle cx="7.5" cy="17" r="1.5"/><circle cx="16.5" cy="17" r="1.5"/></svg>
                     </div>
                     <h3 data-i18n="card1_title">خدمات التأجير</h3>
                 </div>
@@ -323,6 +342,22 @@
             splash.classList.add('splash-hide');
             setTimeout(() => splash.remove(), 700);
         }, 1400);
+
+        /* ── Rental Card Splash ── */
+        const rentalCard = document.getElementById('rental-card');
+        const rentalSplash = document.getElementById('rental-splash');
+
+        function showRentalSplash() {
+            if (!rentalSplash.classList.contains('visible')) {
+                rentalSplash.classList.remove('hidden');
+                rentalSplash.classList.add('visible');
+                setTimeout(() => {
+                    window.location.href = 'rental.html';
+                }, 1250);
+            }
+        }
+
+        rentalCard.addEventListener('click', showRentalSplash);
     </script>
 
 </body>
