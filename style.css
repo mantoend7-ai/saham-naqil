@@ -728,6 +728,7 @@ footer {
 .rental-splash.visible .rental-car {
     animation: rental-car-drive 1.2s ease-in-out forwards;
 }
+.rental-car img,
 .rental-car svg {
     width: 100%;
     height: auto;

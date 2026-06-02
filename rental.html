@@ -50,7 +50,7 @@
         <div class="rental-container">
             <div class="about-card">
                 <div class="about-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3a2 2 0 01-2-2v-4l2-4h14l2 4v4a2 2 0 01-2 2h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M9 17h6"/><path d="M3 11h18"/></svg>
+                    <img src="car.svg" alt="سيارة التأجير" class="about-car-img">
                 </div>
                 <div class="about-text">
                     <h2 data-i18n="about_title">نبذة عن خدمة التأجير</h2>
@@ -269,6 +269,10 @@
             const backLink = document.getElementById('back-link');
             backLink.style.flexDirection = lang === 'ar' ? '' : 'row-reverse';
         }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setLanguage(currentLang);
+        });
 
         document.getElementById('lang-toggle').addEventListener('click', () => {
             setLanguage(currentLang === 'ar' ? 'en' : 'ar');
