@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات التتبع — سهم ناقل</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tracking.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <div class="header-right">
+                <a href="index.html" class="logo-link">
+                    <img src="logo.png" alt="سهم ناقل" class="logo">
+                </a>
+                <a href="index.html" class="company-link">
+                    <span class="company-name">سهم ناقل</span>
+                </a>
+            </div>
+            <div class="header-left">
+                <nav>
+                    <a href="index.html" class="active">الرئيسية</a>
+                    <a href="#form-section">التسجيل</a>
+                    <a href="#about-section">عن الخدمة</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="tracking-hero">
+        <div class="tracking-hero-content">
+            <span class="hero-highlight">خدمات التتبع الذكي</span>
+            <h1>نحو مراقبة كاملة لأسطولك في الوقت الحقيقي</h1>
+            <p>مع سهم ناقل تحصل على تتبع دقيق، تنبيهات فورية، وتحليلات تشغيلية تساعدك تخفّض التكاليف وتزيد أمان الأسطول.</p>
+        </div>
+    </section>
+
+    <main class="tracking-main">
+        <div class="tracking-container">
+
+            <div class="tracking-content">
+                <div class="tracking-card" id="about-section">
+                    <h2>لماذا خدمات التتبع معنا؟</h2>
+                    <p>نحن نقدم باقة كاملة من حلول التتبع المخصصة لعملاء النقل والشحن والتأجير. نظمنا تتابع الموقع بدقة، وتكشف أي تغيير في السلوك، وتُصدر تقارير جاهزة تساعدك تتخذ أفضل القرارات بسرعة.</p>
+
+                    <div class="tracking-features">
+                        <div class="feature-block">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l7 5v7c0 4-3 7-7 7s-7-3-7-7V7l7-5z"/></svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>موقع فوري وموثوق</h3>
+                                <p>تتبع مباشر لمركباتك على الخريطة مع تحديثات لحظية على الحركة والمسار.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-block">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18"/><path d="M12 3v18"/><path d="M5 5l14 14"/></svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>تنبيهات ذكية</h3>
+                                <p>إشعارات فورية عند الخروج عن المسار، السرعة الزائدة، أو توقف غير متوقع.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-block">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>تقارير تشغيلية</h3>
+                                <p>تحليلات سهلة القراءة حول استهلاك الوقود، الكفاءة، وساعات التشغيل.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-block">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0110 10v6h-4v-6a6 6 0 00-12 0v6H2v-6A10 10 0 0112 2z"/></svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>أمان وشفافية</h3>
+                                <p>حماية أفضل لمحرك المركبات وتقارير دقيقة تساعد في تقليل المخاطر التشغيلية.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="tracking-form-card" id="form-section">
+                <h2>سجل الآن لخدمة التتبع</h2>
+                <p>أكمل بياناتك وسنتواصل معك خلال ساعات لنجهز لك عرضًا خاصًا يناسب حجم أسطولك.</p>
+                <form id="tracking-form" class="tracking-form" method="post" action="send_form.php">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل</label>
+                            <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">رقم الجوال</label>
+                            <input type="tel" id="phone" name="phone" placeholder="05XXXXXXXX" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fleet">حجم الأسطول المتوقع</label>
+                        <select id="fleet" name="fleet" required>
+                            <option value="">اختر حجم الأسطول</option>
+                            <option value="0-10">0 - 10 مركبات</option>
+                            <option value="11-50">11 - 50 مركبة</option>
+                            <option value="51-100">51 - 100 مركبة</option>
+                            <option value="101-500">101 - 500 مركبة</option>
+                            <option value="500+">أكثر من 500 مركبة</option>
+                        </select>
+                        <span class="select-note">اختر النطاق الأقرب لحجم أسطولك.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">اسم المنشأة أو النشاط</label>
+                        <input type="text" id="company" name="company" placeholder="اسم الشركة أو النشاط" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="details">تفاصيل إضافية</label>
+                        <textarea id="details" name="details" placeholder="مثلاً: عدد الرحلات أسبوعياً، مناطق التشغيل، احتياجات خاصة"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">أرسل طلب المتابعة</button>
+                    <p class="form-note">نلتزم بالرد خلال 24 ساعة عمل وتقديم عرض مناسب لاحتياجات أسطولك.</p>
+                    <div id="form-status" style="display:none;margin-top:12px;color:var(--navy);font-weight:700;"></div>
+                </form>
+            </aside>
+
+        </div>
+        <p class="tracking-footer-note">يمكنك الاعتماد على نظام تتبع متكامل يدعمك في كل خطوة من تشغيل أسطولك.</p>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="logo.png" alt="سهم ناقل" class="footer-logo">
+                <span>سهم ناقل</span>
+            </div>
+            <p class="footer-copy">جميع الحقوق محفوظة © 2025 سهم ناقل</p>
+            <div class="social-links">
+                <a href="#" class="social-btn" title="تويتر"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                <a href="#" class="social-btn" title="إنستغرام"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            </div>
+        </div>
+    </footer>
+</footer>
+
+    <script>
+        // AJAX submit to send_form.php and show success/error
+        (function(){
+            const form = document.getElementById('tracking-form');
+            if (!form) return;
+            const statusEl = document.getElementById('form-status');
+            form.addEventListener('submit', function(e){
+                e.preventDefault();
+                statusEl.style.display = 'none';
+                const btn = form.querySelector('button[type=submit]');
+                btn.disabled = true;
+                btn.textContent = 'جاري الإرسال...';
+
+                const data = new FormData(form);
+
+                fetch(form.action, {
+                    method: 'POST',
+                    body: data,
+                }).then(r => r.json()).then(res => {
+                    if (res && res.success) {
+                        statusEl.style.display = 'block';
+                        statusEl.style.color = 'green';
+                        statusEl.textContent = 'تم استلام طلبك بنجاح، سنتواصل معك قريبًا.';
+                        form.reset();
+                    } else {
+                        throw new Error(res && res.error ? res.error : 'حدث خطأ أثناء الإرسال');
+                    }
+                }).catch(err => {
+                    statusEl.style.display = 'block';
+                    statusEl.style.color = '#D64545';
+                    statusEl.textContent = 'فشل الإرسال: ' + (err.message || err);
+                }).finally(()=>{
+                    btn.disabled = false;
+                    btn.textContent = 'أرسل طلب المتابعة';
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
