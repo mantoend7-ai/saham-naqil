@@ -18,8 +18,22 @@ function clean($v) {
     return trim(strip_tags($v));
 }
 
-// Honeypot anti-spam field (hidden input named hp)
+// Honeypot: bots fill this hidden field, humans don't see it
 if (!empty($_POST['hp'])) {
+    echo json_encode(['success' => false, 'error' => 'spam']);
+    exit;
+}
+
+// JS token: must be present (proves JavaScript ran)
+if (empty($_POST['_tk']) || empty($_POST['_ts'])) {
+    echo json_encode(['success' => false, 'error' => 'spam']);
+    exit;
+}
+
+// Time check: form must be loaded at least 4 seconds before submission
+$form_ts  = intval($_POST['_ts']);
+$elapsed  = time() - $form_ts;
+if ($elapsed < 4 || $elapsed > 7200) {
     echo json_encode(['success' => false, 'error' => 'spam']);
     exit;
 }

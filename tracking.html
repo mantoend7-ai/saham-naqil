@@ -7,6 +7,16 @@
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tracking.css">
+    <style>
+        .hp-field {
+            position: absolute;
+            left: -9999px;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -94,6 +104,15 @@
                 <h2>سجل الآن لخدمة التتبع</h2>
                 <p>أكمل بياناتك وسنتواصل معك خلال ساعات لنجهز لك عرضًا خاصًا يناسب حجم أسطولك.</p>
                 <form id="tracking-form" class="tracking-form" method="post" action="send_form.php">
+                    <!-- Anti-spam: honeypot (hidden from real users, bots fill it) -->
+                    <div class="hp-field" aria-hidden="true">
+                        <label for="website">الموقع الإلكتروني</label>
+                        <input type="text" id="website" name="hp" tabindex="-1" autocomplete="off">
+                    </div>
+                    <!-- Anti-spam: JS timestamp + token -->
+                    <input type="hidden" name="_ts" id="_form_ts">
+                    <input type="hidden" name="_tk" id="_form_tk">
+
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">الاسم الكامل</label>
@@ -152,6 +171,15 @@
             <p class="footer-copy">جميع الحقوق محفوظة © 2023 سهم ناقل</p>
         </div>
     </footer>
+
+    <script>
+        // Set anti-spam fields on page load
+        (function(){
+            var ts = Math.floor(Date.now() / 1000);
+            document.getElementById('_form_ts').value = ts;
+            document.getElementById('_form_tk').value = (ts % 97).toString(16) + Math.random().toString(36).slice(2, 9);
+        })();
+    </script>
 
     <script>
         // AJAX submit to send_form.php and show success/error
