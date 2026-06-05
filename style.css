@@ -922,6 +922,65 @@ footer {
     }
 }
 
+/* ===== DARK MODE ===== */
+.dark-btn {
+    padding: 5px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.dark {
+    --bg: #0b1520;
+    --text: #dde8f2;
+    --text-light: #7d98b3;
+    background: var(--bg);
+    color: var(--text);
+}
+
+body.dark .section-header h2,
+body.dark .card-content h3,
+body.dark .creative-copy h2,
+body.dark .creative-step h3 {
+    color: #e8f0f7;
+}
+
+body.dark .card {
+    background: #111e2e;
+    border-color: rgba(255,255,255,0.07);
+}
+
+body.dark .creative-section {
+    background: linear-gradient(180deg, #080f1a 0%, #0b1520 100%);
+}
+
+body.dark .creative-step {
+    background: #111e2e;
+    border-color: rgba(41,171,226,0.18);
+}
+
+body.dark .road-frame {
+    background: radial-gradient(circle at top, rgba(41,171,226,0.12), transparent 48%),
+                linear-gradient(180deg, #152030 0%, #0f1a28 100%);
+    border-color: rgba(41,171,226,0.15);
+}
+
+body.dark .car-icon {
+    background: rgba(255,255,255,0.08);
+}
+
+body.dark .option-btn {
+    background: #1a2e42;
+    color: var(--blue);
+}
+
+body.dark .option-btn:hover {
+    background: var(--white);
+    color: var(--navy);
+}
+
+/* ===== END DARK MODE ===== */
+
 @media (max-width: 640px) {
     header { padding: 14px 18px; }
     nav { display: none; }

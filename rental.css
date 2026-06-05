@@ -245,6 +245,23 @@
 .branch-wa-btn svg { width: 15px; height: 15px; }
 .branch-wa-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(37,211,102,0.45); }
 
+/* ===== DARK MODE ===== */
+body.dark .about-card,
+body.dark .branch-card {
+    background: #111e2e;
+    border-color: rgba(255,255,255,0.07);
+}
+
+body.dark .about-text h2,
+body.dark .branch-name {
+    color: #e8f0f7;
+}
+
+body.dark .feature-item,
+body.dark .branch-detail {
+    color: var(--text);
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .about-card { flex-direction: column; padding: 28px; gap: 24px; }
